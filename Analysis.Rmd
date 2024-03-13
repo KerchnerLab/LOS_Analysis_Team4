@@ -31,9 +31,13 @@ data(LOS_model)
 ```{r}
 LOS_model %>%
   ggplot() +
-  geom_histogram(aes(x=Age), fill = 'darkgreen', color = 'purple',
+
+  geom_histogram(aes(x=Age), fill = 'cornflowerblue', color = 'black',
                  breaks = seq(0, 100, by=5)) +
-  scale_x_continuous(breaks = seq(0, 100, by=5))
+  scale_x_continuous(breaks = seq(0, 100, by=5)) + 
+  xlab("Age (years)") + 
+  theme_classic()
+#explanatory text
 ```
 
 # Modeling analysis
